@@ -16,10 +16,13 @@
   <script>
 
  do {
-    let a = Number(prompt("Valor de a:"));
-    if (a === 0) {
+    let a;
+    do{
+      a = Number(prompt("Valor de a:"));
+      if (a === 0) {
       alert("O valor de a não pode ser 0");
-    };
+    }
+    } while (a === 0);
     
     let b = Number(prompt("Valor de b:"));
 
